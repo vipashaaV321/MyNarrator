@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+  <!-- JQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    <title>MyNarrator</title>
+    <style>
+      body {
+        width: 100%;
+        margin:0;
+        padding: 0;
+      }
+
+      #text {
+        width: 100%;
+        height: 50vh;
+      }
+    </style>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+  <nav class="navbar navbar-light bg-light mb-4">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><i class="fa fa-bullhorn"></i> MyNarrator</a>
+    </div>
+  </nav>
+  <div class="container">
+    <textarea id="text" placeholder="Enter text to convert speech!"></textarea>
+    <label for="speed"> Adjust Speed</label>
+    <input
+      type="number"
+      name="spee"
+      id="speed"
+      min=".5"
+      max="3"
+      step=".5"
+      value="1"
+    />
+   <div class="row p-2">
+     <button type="button" class="btn btn-outline-info" data-mdb-ripple-color="dark" id="play-button">
+       <i class="fa fa-play"></i> Play
+     </button>
+     <button type="button" class="btn btn-outline-warning" data-mdb-ripple-color="dark" id="pause-button">
+       <i class="fa fa-pause-circle"></i> Pause
+     </button>
+     <button type="button" class="btn btn-outline-danger" data-mdb-ripple-color="dark" id="stop-button">
+       <i class="fa fa-stop"></i> Stop</button>
+     </button>
+   </div>
+  </div>
+  </body>
+</html>
